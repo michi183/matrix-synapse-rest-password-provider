@@ -75,7 +75,7 @@ class RestAuthProvider(object):
         else:
             logger.info("User %s already exists, registration skipped", user_id)
 
-        if auth["profile"]:
+        if "profile" in auth:
             logger.info("Handling profile data")
             profile = auth["profile"]
 
